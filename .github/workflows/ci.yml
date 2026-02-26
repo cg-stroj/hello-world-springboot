@@ -21,3 +21,10 @@ jobs:
 
       - name: Run tests
         run: mvn -B test
+
+      - name: Verify app prints Hello World
+        shell: bash
+        run: |
+          set -euo pipefail
+          timeout 30s mvn -q -DskipTests spring-boot:run | tee app.log || true
+          grep -x "Hello World" app.log
