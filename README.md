@@ -1,6 +1,6 @@
 # hello-world-springboot
 
-Minimal Java 21 + Spring Boot project that prints `Hello World`.
+Minimal Java 21 + Spring Boot project that prints `Hello World` only for test.
 
 ## Requirements
 
